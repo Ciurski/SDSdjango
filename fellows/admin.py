@@ -1,5 +1,5 @@
 from django.contrib import admin
-from fellows.models import Profile, Adress, Article, Author, WorkExperience, Project
+from fellows.models import Profile, Adress, Article, Author, WorkExperience, Project, University
 # Register your models here.
 
 class AuthorInLine(admin.TabularInline):
@@ -14,8 +14,11 @@ class ArticleInLine(admin.TabularInline):
 class WorkExperienceInLine(admin.TabularInline):
     model = WorkExperience
 
+class UniversityInLine(admin.TabularInline):
+    model = University
+
 class ProfileAdmin(admin.ModelAdmin):
-    inlines = [WorkExperienceInLine, ArticleInLine]
+    inlines = [WorkExperienceInLine, ArticleInLine, UniversityInLine]
 
 class ProjectInLine(admin.TabularInline):
     model = Project
