@@ -14,7 +14,7 @@ djangorestframework-jwt==1.11.0
 gunicorn==19.9.0
 idna==2.8
 inflection==0.3.1
-Pillow==6.2.1
+Pillow==8.2.0
 psycopg2==2.8.4
 pybrake==0.4.1
 PyJWT==1.7.1
